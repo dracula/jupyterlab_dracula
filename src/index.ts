@@ -12,14 +12,14 @@ import {
  * A plugin for the Dracula
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: 'phazerlock:plugin',
+  id: 'jupyterlab_dracula:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
       name: 'Dracula',
       isLight: false,
       load: function() {
-        return manager.loadCSS('phazerlock/index.css');
+        return manager.loadCSS('jupyterlab_dracula/index.css');
       },
       unload: function() {
         return Promise.resolve(void 0);
