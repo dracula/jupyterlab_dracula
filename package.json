@@ -1,6 +1,6 @@
 {
-  "name": "phazerlock",
-  "version": "0.19.1",
+  "name": "jupyterlab_dracula",
+  "version": "0.19.3",
   "description": "Dracula Theme",
   "homepage": "https://github.com/karosc/jupyterlab_dracula",
   "bugs": {
