@@ -2,9 +2,9 @@
   "name": "phazerlock",
   "version": "0.19.1",
   "description": "Dracula Theme",
-  "homepage": "https://github.com/jupyterlab/jupyterlab",
+  "homepage": "https://github.com/karosc/jupyterlab_dracula",
   "bugs": {
-    "url": "https://github.com/jupyterlab/jupyterlab/issues"
+    "url": "https://github.com/karosc/jupyterlab_dracula/issues"
   },
   "license": "BSD-3-Clause",
   "author": "Project Jupyter",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jupyterlab/jupyterlab.git"
+    "url": "https://github.com/karosc/jupyterlab_dracula.git"
   },
   "scripts": {
     "build": "run-p build:**",
