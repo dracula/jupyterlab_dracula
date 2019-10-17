@@ -2,12 +2,18 @@
   "name": "jupyterlab_dracula",
   "version": "0.20.1",
   "description": "Dracula Theme",
-  "homepage": "https://github.com/karosc/jupyterlab_dracula",
+  "homepage": "https://github.com/DottedGlass/jupyterlab_dracula",
   "bugs": {
-    "url": "https://github.com/karosc/jupyterlab_dracula/issues"
+    "url": "https://github.com/DottedGlass/jupyterlab_dracula/issues"
   },
   "license": "BSD-3-Clause",
   "author": "Project Jupyter",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme"
+  ],
   "files": [
     "lib/*.d.ts",
     "lib/*.js.map",
@@ -25,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/karosc/jupyterlab_dracula.git"
+    "url": "https://github.com/DottedGlass/jupyterlab_dracula.git"
   },
   "scripts": {
     "build": "run-p build:**",
@@ -38,8 +44,8 @@
     "watch:webpack": "webpack --watch"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.19.1",
-    "@jupyterlab/apputils": "^0.19.1",
+    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/apputils": "^1.0.0",
     "font-awesome": "~4.7.0"
   },
   "devDependencies": {
@@ -61,6 +67,6 @@
   },
   "jupyterlab": {
     "extension": true,
-    "themeDir": "static"
+    "themePath": "style/index.css"
   }
 }
