@@ -1,23 +1,6 @@
-/*{
-  "extends": "../../tsconfigbase",
-  "compilerOptions": {
-    "outDir": "lib",
-    "rootDir": "src"
-  },
-  "include": ["src/*"],
-  "references": [
-    {
-      "path": "../application"
-    },
-    {
-      "path": "../apputils"
-    }
-  ]
-}*/
-
-
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "composite": true,
     "declaration": true,
     "noImplicitAny": true,
@@ -27,13 +10,18 @@
     "preserveWatchOutput": true,
     "module": "commonjs",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "target": "es2015",
-    "outDir": "./lib",
-    "rootDir": "src",
-    "lib": ["dom", "es2015"],
+    "lib": [
+      "dom",
+      "es2015"
+    ],
     "jsx": "react",
-    "types": []
+    "types": [],
+    "outDir": "lib",
+    "rootDir": "src"
   },
-  "include": ["src/*"]
+  "include": [
+    "src/*"
+  ]
 }
-

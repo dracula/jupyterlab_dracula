@@ -21,7 +21,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     manager.register({
       name: 'Dracula',
       isLight: false,
-      load: () => manager.loadCSS(style)
+      load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
   },
