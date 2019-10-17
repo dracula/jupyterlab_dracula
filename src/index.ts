@@ -1,6 +1,7 @@
 
 import {
-  JupyterLab, JupyterLabPlugin
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
 import {
@@ -11,19 +12,17 @@ import {
 /**
  * A plugin for the Dracula
  */
-const plugin: JupyterLabPlugin<void> = {
+const plugin: JupyterFrontEndPlugin<void> = {
   id: 'jupyterlab_dracula:plugin',
   requires: [IThemeManager],
-  activate: function(app: JupyterLab, manager: IThemeManager) {
+  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
+    const style = '@DottedGlass/jupyterlab_dracula/index.css';
+
     manager.register({
       name: 'Dracula',
       isLight: false,
-      load: function() {
-        return manager.loadCSS('jupyterlab_dracula/index.css');
-      },
-      unload: function() {
-        return Promise.resolve(void 0);
-      }
+      load: () => manager.loadCSS(style)
+      unload: () => Promise.resolve(undefined)
     });
   },
   autoStart: true
